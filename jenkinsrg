@@ -1,16 +1,40 @@
 pipeline
 {
-  agent any
-  {
+    agent any
+    
     stages
     {
-    stage('name')
-    {
-      steps
-      {
-          echo 'Ravindra'
-      }
+        stage('FirstName')
+        {
+            steps
+            {
+                echo 'Sachin'
+                sleep 10
+            }
+        }
+        stage('MiddleName')
+        {
+            steps
+            {
+                echo 'Ramesh'
+                sleep 10
+            }
+        }
+        stage('LastName')
+        {
+            steps
+            {
+                echo 'Tendulkar'
+                sleep 10
+            }
+        }
+        stage('Thanx')
+        {
+            steps
+            {
+                echo 'Visit Again!!!'
+                sleep 5
+            }
+        }
     }
-    }
-  }
 }
